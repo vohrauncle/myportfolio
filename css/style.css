@@ -7,6 +7,10 @@ html{
 }
 .height{
     position:static;
+    z-index: -10;
+}
+.wel{
+    display: fixed;
 }
 .mylist{
     transition: 0.7s ease;
@@ -14,16 +18,22 @@ html{
 #logo{
     width: 7.1rem;
 }
-#navibar{
-    font-size: 1.6rem;
-}
-.banner{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/background.jpg");
-    height: 100vh;
+.wel{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+       background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/background.jpg"); 
+     height: 42rem; 
+     background-size: 100% 100%;
+     transform: translate(0%,0%);
+
+}
+#navibar{
+    background: black;
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/background.jpg"); */
+    /* height: 42rem; */
+    /* background-size: 100% 100%; */
+    font-size: 1.6rem;
 }
 #searchmenu{
     font-size: medium;
@@ -51,7 +61,7 @@ html{
     font-size: 6.4rem;
     text-align: center;
     /* text-justify: center; */
-    transform: translate(0%,159%);
+    transform: translate(0%,44%);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 1rem;
 }
@@ -59,7 +69,7 @@ html{
 .help{
     /* position: fixed; */
     text-align: center;
-    transform: translate(0%,434%);
+    transform: translate(0%,96%);
     font-size: 1.6rem;
 }
 p {
@@ -154,7 +164,7 @@ p {
 }
 .hire{
     /* margin-top: -50px; */
-    height: 4.0rem;
+    height: 6.0rem;
     margin: 4.8rem;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -259,42 +269,45 @@ text-align: center;
       color: white;
       /* background: rgba(0,0,0,0.8); */
   }
-  @media (max-width: 1160px){
-      #services{
-          height: 55rem;
-      }
-  }
-  @media (max-width: 998px){
-      html{
-          font-size: 55%;
-      }
-      #services{
-        height: 50rem;
-
-  }
-  @media(max-width: 768px){
-      html{
-          font-size: 45%;
-      }
-      #services{
-        height: 56rem;
-        padding: 2%;
-        /* margin:0%; */
-    }#service{
-        margin-top: 2rem;
-    }
-  @media(max-width: 474px)
-  {
-      #service{
-    margin-top: 2rem;
+@media (max-width: 1160px)
+{
+#services{
+height: 55rem;
 }
-  @media(max-width: 650px)
-  {
-      #services{
-    height: 53rem;
+}
+@media (max-width: 998px)
+{
+html{
+font-size: 55%;
+    }
+#services{
+height: 50rem;
+}
+}
+@media(max-width: 768px)
+{
+html{
+font-size: 45%;
 }
 #services{
-    height: 62rem;
+height: 56rem;
+padding: 2%;
+}
+#service{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 690px)
+{
+#services{
+  height: 48rem;
+}
+}
+@media(max-width: 650px)
+{ 
+#services{
+    height: 77rem;
 }
   #service1{
     /* font-size: 2em; */
@@ -370,5 +383,23 @@ background: transparent;
 color: black;
 }
 }
-    }
-    
+@media (max-width:470px) 
+{
+#services{
+height: 70rem;
+}          
+}
+@media (max-width:434px) 
+{
+.hire{
+    height: 7rem;
+}
+.hire:hover{
+    height: 7rem;
+    width: auto;
+    width: 17.0rem;
+}
+    #services{
+    height: 63rem;
+}          
+}
